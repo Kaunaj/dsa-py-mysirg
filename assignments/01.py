@@ -59,13 +59,11 @@ class Solution:
     if n == 1: return [1]
 
     fibNums = [1, 1]
-    count = 2
-    i = 1
+    i = 2
 
-    while (count < n):
-      fibNums.append(fibNums[i] + fibNums[i - 1])
+    while (i < n):
+      fibNums.append(fibNums[i - 1] + fibNums[i - 2])
 
-      count += 1
       i += 1
 
     return fibNums
