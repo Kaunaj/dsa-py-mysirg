@@ -125,27 +125,30 @@ class ListIterator:
     return data
 
 
-myList = List()
-myList.print()
-myList.insertAtStart(20)
-myList.insertAtStart(10)
-myList.insertAtLast(30)
-myList.insertAfterNode(myList.search(20), 25)
-myList.print()
-myList.delete(20)
-print('testing myList.delete(20)')
-myList.print()
-myList.deleteFirst()
-print('testing myList.deleteFirst()')
-myList.print()
-myList.deleteLast()
-print('testing myList.deleteLast()')
-myList.print()
+def test():
+  myList = List()
+  myList.print()
+  myList.insertAtStart(20)
+  myList.insertAtStart(10)
+  myList.insertAtLast(30)
+  myList.insertAfterNode(myList.search(20), 25)
+  myList.print()
+  myList.delete(20)
+  print('testing myList.delete(20)')
+  myList.print()
+  myList.deleteFirst()
+  print('testing myList.deleteFirst()')
+  myList.print()
+  myList.deleteLast()
+  print('testing myList.deleteLast()')
+  myList.print()
 
-myList.insertAtLast(35)
-myList.insertAtLast(45)
-print('iterating through for loop')
-for item in myList:
-  print(item, end=' ')
+  myList.insertAtLast(35)
+  myList.insertAtLast(45)
+  print('iterating through for loop')
+  for item in myList:
+    print(item, end=' ')
 
-print('\n\nend of testing\n\n')
+  print('\n\nend of testing\n\n')
+
+# test()
