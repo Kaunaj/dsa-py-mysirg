@@ -1,3 +1,7 @@
+'''
+Stack By Inheriting Linked List Class
+'''
+
 import importlib
 LinkedList = importlib.import_module('03')
 
