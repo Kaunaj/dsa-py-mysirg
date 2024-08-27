@@ -120,4 +120,4 @@ def test():
   print('inOrder traversal:', tree.traverse('inOrder'))
   print('postOrder traversal:', tree.traverse('postOrder'))
 
-test()
+# test()
