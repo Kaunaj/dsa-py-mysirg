@@ -54,6 +54,9 @@ class BinarySearchTree(BST.BinarySearchTree):
       
     # print('returning start:', start.data)
     return start
+  
+  def size(self):
+    return len(self.traverse('inOrder'))
 
 
 def test():
@@ -71,17 +74,22 @@ def test():
   tree.insert(72)
   tree.insert(80)
   print('inOrder traversal:', tree.traverse('inOrder'))
+  print('current size:', tree.size())
   print('deleting 30')
   tree.delete(30)
   print('inOrder traversal:', tree.traverse('inOrder'))
+  print('current size:', tree.size())
   print('deleting 15')
   tree.delete(15)
   print('inOrder traversal:', tree.traverse('inOrder'))
+  print('current size:', tree.size())
   print('deleting 70')
   tree.delete(70)
   print('inOrder traversal:', tree.traverse('inOrder'))
+  print('current size:', tree.size())
   print('deleting root 50')
   tree.delete(50)
   print('inOrder traversal:', tree.traverse('inOrder'))
+  print('current size:', tree.size())
 
 test()
