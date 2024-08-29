@@ -62,4 +62,4 @@ def test():
   graph.print()
   print(graph.hasEdge(2, 1))
 
-test()
+# test()
