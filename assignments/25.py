@@ -12,7 +12,7 @@ class SelectionSort:
     end = len(self.array)
 
     while start < end - 1:
-      index = start
+      index = start + 1
       minIndex = start
 
       while index < end:
